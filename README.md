@@ -1350,9 +1350,9 @@ attendeeList.sort { a, b in
 <a id="markdown-内存管理" name="内存管理"></a>
 ### 内存管理 
 
-在编码中应该避免循环引用。对于会产生循环应用的地方，使用 weak 来解决。此外，还可以使用类型（struct、enum）来避免循环引用。
-可以通过 [weak self]、`guard let strongSelf = self else { return }` 来延伸对象的生命周期。
-相对于 Optional 拆包，更推荐使用 strongSelf 明确的延长生命周期。
+在编码中应该避免循环引用。对于会产生循环引用的地方，使用 weak 来解决。此外，还可以使用类型（struct、enum）来避免循环引用。
+可以通过 [weak self]、`guard let strongSelf = self else { return }` 来延长对象的生命周期。
+相对于使用 Optional 拆包，更推荐使用 strongSelf 明确的延长 self 的生命周期。
 
 ```swift
 ✅
