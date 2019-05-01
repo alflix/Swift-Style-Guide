@@ -159,7 +159,7 @@ employees.remove(x) // 不够清晰: 这里感觉像是移除 x
 <a id="markdown-省略无用的词" name="省略无用的词"></a>
 #### 省略无用的词
 
-如果使用者已经知道某些信息，那么这个信息在命名中就可以省略。
+如果使用者已经知道某些信息，那么这个信息在命名中就可以被省略。
 
 ```swift
 ❌
@@ -167,7 +167,7 @@ public mutating func removeElement(_ member: Element) -> Element?
 allViews.removeElement(cancelButton)
 ```
 
-上面的例子中 Element没有传达出更多有效的信息。
+上面的例子中 Element 没有传达出更多有效的信息。
 
 ```swift
 ✅
