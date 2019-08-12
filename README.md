@@ -1572,7 +1572,7 @@ if let _ = value {
 （storyBoard 和 xib，以下统称 IB）
 在可以用 IB 的地方，就不用代码手写布局。通常除了复杂的动画或一些基础组件建议使用代码手写之外，其他都必须用 IB 布局。
 设置 UIView 的属性的时候，如果可以在 IB 中进行，就不要在代码中设置。包括在 storyBoard 中设置 delegate，设置 UIButton 的属性等。
-使用  storyBoard 和 xib  注意以下几点：
+使用 storyBoard 和 xib 注意以下几点：
 
 - IB 文件的命名与其对应的 Swift 文件保持相同。
 - IB文件中控件的组织结构要合理，从上到下，从左往右布局。
@@ -1626,7 +1626,7 @@ private func makeLocationManager() -> CLLocationManager {
 <a id="markdown-编译器警告" name="编译器警告"></a>
 ### 编译器警告 
 
-努力让代码在没有警告的情况下编译。
+尽量使让代码在没有警告的情况下编译。
 一个常见的例外是被废弃的 API。如果写的是组件，虽然这组被废弃的 API 自身已经不使用，但是对外会需要兼容旧的版本，所以还是保留一段时间的废弃的 API。这种编译器警告是可以接受的。
 
 <a id="markdown-playground-literal" name="playground-literal"></a>
